@@ -1,3 +1,4 @@
+import os
 import matplotlib.pyplot as plt
 
 # Data configuration
@@ -23,28 +24,34 @@ colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728', '#9467bd']
 # Create the plot
 plt.figure(figsize=(10, 6), dpi=100)
 
-# Plot each component as a line
+# Plot each component as a line and annotate all points
 for (label, values), color in zip(data.items(), colors):
-    # Convert to standard list explicitly
     val_series = list(values)
     plt.plot(years, val_series, marker='o', linewidth=2.5, label=label, color=color)
     
-    # Add data labels to the first and last points for better scannability
-    plt.text(years[0], val_series[0] - 3, f'{val_series[0]}%', ha='center', va='top', fontsize=9, color=color, fontweight='bold')
-    plt.text(years[-1], val_series[-1] + 1.5, f'{val_series[-1]}%', ha='center', va='bottom', fontsize=9, color=color, fontweight='bold')
+    # Annotate all points
+    for year, val in zip(years, val_series):
+        # Adjust vertical offset if needed for clarity
+        plt.text(year, val + 1.2, f'{val}%', ha='center', va='bottom', fontsize=8, color=color, fontweight='bold')
 
 # Styling the layout
 plt.title('Evolution of AI Frontier Training Budgets (2020 – 2026)', fontsize=14, fontweight='bold', pad=20)
 plt.xlabel('Year', fontsize=12, labelpad=10)
 plt.ylabel('Mean Percentage of Total Budget (%)', fontsize=12, labelpad=10)
-plt.ylim(0, 100)
+plt.ylim(0, 75)
 plt.grid(axis='y', linestyle='--', alpha=0.5)
 
-# Place the legend prominently
-plt.legend(loc='upper right', frameon=True, facecolor='white', edgecolor='none', shadow=True)
+# Place the legend prominently in upper left to prevent overlap
+plt.legend(loc='upper left', frameon=True, facecolor='white', edgecolor='none', shadow=True)
 
 # Final tight layout processing
 plt.tight_layout()
+
+# Save plot to assets directory
+assets_dir = os.path.join(os.path.dirname(__file__), 'assets')
+os.makedirs(assets_dir, exist_ok=True)
+plot_path = os.path.join(assets_dir, 'ai_budget_evolution.png')
+plt.savefig(plot_path, dpi=300, bbox_inches='tight')
 
 # Display the script's visual output
 plt.show()

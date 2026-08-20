@@ -4,6 +4,7 @@
 
 The data below presents the estimated mean percentage of the total budget allocated to each cost component by frontier labs (like OpenAI and Anthropic) over the seven-year span:
 
+![Evolution of AI Frontier Training Budgets](assets/ai_budget_evolution.png)
 
 | Cost Component | 2020 (Mean %) | 2021 (Mean %) | 2022 (Mean %) | 2023 (Mean %) | 2024 (Mean %) | 2025 (Mean %) | 2026 (Mean %) |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
