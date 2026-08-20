@@ -2,6 +2,18 @@
   "years": ["2020", "2021", "2022", "2023", "2024", "2025", "2026"],
   "components": [
     {
+      "name": "R&D Staff (Human Capital)",
+      "icon": "🧑‍💻",
+      "color": "#2ca02c",
+      "values": [48, 40, 32, 23, 16, 11, 8]
+    },
+    {
+      "name": "Data Procurement & RLHF",
+      "icon": "📝",
+      "color": "#9467bd",
+      "values": [10, 10, 9, 7, 5, 3, 3]
+    },
+    {
       "name": "Chips & Compute Hardware",
       "icon": "💻",
       "color": "#1f77b4",
@@ -14,22 +26,10 @@
       "values": [10, 12, 14, 16, 18, 19, 20]
     },
     {
-      "name": "R&D Staff (Human Capital)",
-      "icon": "🧑‍💻",
-      "color": "#2ca02c",
-      "values": [48, 40, 32, 23, 16, 11, 8]
-    },
-    {
       "name": "Energy & Electricity",
       "icon": "⚡",
       "color": "#d62728",
       "values": [2, 3, 3, 4, 4, 4, 4]
-    },
-    {
-      "name": "Data Procurement & RLHF",
-      "icon": "📝",
-      "color": "#9467bd",
-      "values": [10, 10, 9, 7, 5, 3, 3]
     }
   ]
 }

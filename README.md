@@ -10,9 +10,9 @@ The data below presents the estimated mean percentage of the total budget alloca
 
 | Cost Component | 2020 (Mean %) | 2021 (Mean %) | 2022 (Mean %) | 2023 (Mean %) | 2024 (Mean %) | 2025 (Mean %) | 2026 (Mean %) |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| 🧑‍💻 R&D Staff (Human Capital) | 48% | 40% | 32% | 23% | 16% | 11% | 8% |
+| 📝 Data Procurement & RLHF | 10% | 10% | 9% | 7% | 5% | 3% | 3% |
 | 💻 Chips & Compute Hardware | 30% | 35% | 42% | 50% | 57% | 63% | 65% |
 | 🏢 Data Center Infrastructure | 10% | 12% | 14% | 16% | 18% | 19% | 20% |
-| 🧑‍💻 R&D Staff (Human Capital) | 48% | 40% | 32% | 23% | 16% | 11% | 8% |
 | ⚡ Energy & Electricity | 2% | 3% | 3% | 4% | 4% | 4% | 4% |
-| 📝 Data Procurement & RLHF | 10% | 10% | 9% | 7% | 5% | 3% | 3% |
 
