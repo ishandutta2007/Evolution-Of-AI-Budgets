@@ -32,9 +32,15 @@ for row_idx, row in enumerate(values_matrix):
 
     for x_idx, (year, val, mid) in enumerate(zip(years, row, mid_points)):
         # Contrast coloring based on band thickness
-        text_color = "black" if val < 5 else "white"
+        text_color = "black"# if val < 5 else "white"
+        if year==2020:
+            x_offset=1
+        elif year==2026:
+            x_offset=-1
+        else:
+            x_offset=0
         ax.text(
-            x_idx,
+            x_idx+x_offset,
             mid,
             f"{val}%",
             ha="center",
@@ -62,8 +68,8 @@ ax.grid(axis="y", linestyle="--", alpha=0.4)
 # Top horizontal legend
 ax.legend(
     loc="upper center",
-    bbox_to_anchor=(0.5, 1.08),
-    ncol=3,
+    bbox_to_anchor=(0.5, 1.06),
+    ncol=5,
     frameon=True,
     facecolor="white",
     edgecolor="#cccccc",

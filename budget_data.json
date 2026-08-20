@@ -14,19 +14,19 @@
       "values": [10, 10, 9, 7, 5, 3, 3]
     },
     {
-      "name": "Chips & Compute Hardware",
+      "name": "Chips",
       "icon": "💻",
       "color": "#1f77b4",
       "values": [30, 35, 42, 50, 57, 63, 65]
     },
     {
-      "name": "Data Center Infrastructure",
+      "name": "Data Center Infra",
       "icon": "🏢",
       "color": "#ff7f0e",
       "values": [10, 12, 14, 16, 18, 19, 20]
     },
     {
-      "name": "Energy & Electricity",
+      "name": "Energy",
       "icon": "⚡",
       "color": "#d62728",
       "values": [2, 3, 3, 4, 4, 4, 4]
